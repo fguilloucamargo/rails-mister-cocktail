@@ -1,8 +1,12 @@
 
 <div class="container">
-  <%= simple_form_for [@cocktail, @dose] do |f|%>
-    <%= f.input :description %>
-    <%= f.association :ingredient %>
-    <%= f.button :submit, "Add to the cocktail", class: "btn btn-outline-primary"  %>
-  <% end %>
+  <div class="row  m-5">
+    <div class="col-4 offset-4">
+      <%= simple_form_for [@cocktail, @dose] do |f|%>
+        <%= f.input :description %>
+        <%= f.association :ingredient %>
+        <%= f.button :submit, "Add to the cocktail", class: "btn btn-outline-primary"  %>
+      <% end %>
+    </div>
+  </div>
 </div>
