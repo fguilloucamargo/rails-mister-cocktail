@@ -7,12 +7,12 @@
 <div class="container">
   <h2 class="m-2">Ingredients:</h2>
   <% @cocktail.doses.each do |dose| %>
+  <div class="justify-content m-2">
     <li><%= dose.description %> <%= dose.ingredient.name %>
-    <h6 class="m-2">
       <%= link_to  dose_path(dose), method: :delete, data: {confirm: "Are you sure ?"} do %>
         <i class="fas fa-trash-alt"></i>
       <% end %>
-    </h6>
+    </div>
     </li>
     <!-- <%= link_to "Delete ingredient", dose_path(dose) ,method: :delete, data: { confirm: "Are you sure?" } %> -->
   <% end %>
