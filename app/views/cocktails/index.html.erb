@@ -19,11 +19,6 @@
           <h2>
             <%= link_to "#{cocktail.name}", cocktail_path(cocktail), class: "text-muted m-2" %>
           </h2>
-          <h6 class="m-2">
-            <%= link_to  cocktail_path(cocktail), method: :delete, data: {confirm: "Are you sure ?"} do %>
-              <i class="fas fa-trash-alt"></i>
-            <% end %>
-          </h6>
         </div>
       </div>
     <% end %>
